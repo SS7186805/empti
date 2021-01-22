@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/common_toolbar" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D3D3D3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <ImageView
+                    android:id="@+id/ivReturned"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivReturned"
+                    android:fontFamily="@font/gothicbold"
+                    android:paddingStart="15dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/total_returned"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="p" />
+
+                <TextView
+                    android:id="@+id/tvTotalItemsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/gothicaone"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="p" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTotal"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toEndOf="@id/ivReturned"
+                    android:backgroundTint="@color/appColor"
+                    android:foregroundTint="@color/appColor"
+                    android:indeterminate="false"
+                    android:progress="1"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:id="@+id/tvPendingContainersCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressBar"
+                    android:layout_toEndOf="@id/ivReturned"
+                    android:fontFamily="@font/gothicaone"
+                    android:paddingStart="15dp"
+                    android:paddingTop="2dp"
+                    android:text="  "
+                    android:textColor="#808080"
+                    android:textFontWeight="500"
+                    android:textSize="13sp"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="p" />
+
+                <TextView
+                    android:id="@+id/tvPendingContainersText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressBar"
+                    android:layout_toEndOf="@id/tvPendingContainersCount"
+                    android:fontFamily="@font/gothicaone"
+                    android:paddingTop="2dp"
+                    android:text="@string/containers_to_next_badge"
+                    android:textColor="#808080"
+                    android:textFontWeight="500"
+                    android:textSize="13sp"
+                    tools:targetApi="p" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/scansLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:paddingStart="35dp"
+                android:paddingEnd="35dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/dashed_bg"
+                    android:layerType="software" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothicaone"
+                    android:text="@string/scans"
+                    android:textColor="@color/appColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/dashed_bg"
+                    android:layerType="software" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/scansGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="3"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="24dp" />
+
+            <LinearLayout
+                android:id="@+id/returnsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="35dp"
+                android:paddingEnd="35dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/dashed_bg"
+                    android:layerType="software" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothicaone"
+                    android:text="@string/returns"
+                    android:textColor="@color/appColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/dashed_bg"
+                    android:layerType="software" />
+            </LinearLayout>
+            <GridView
+                android:id="@+id/returnsGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="3"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="24dp" />
+
+            <LinearLayout
+                android:id="@+id/streaksLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layerType="software"
+                android:orientation="horizontal"
+                android:paddingStart="35dp"
+                android:paddingEnd="35dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/dashed_bg"
+                    android:layerType="software" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothicaone"
+                    android:text="@string/streaks"
+                    android:textColor="@color/appColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/dashed_bg" />
+            </LinearLayout>
+            <GridView
+                android:id="@+id/streaksGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="3"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="24dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

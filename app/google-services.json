@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "589254641642",
+    "firebase_url": "https://empti-42b76.firebaseio.com",
+    "project_id": "empti-42b76",
+    "storage_bucket": "empti-42b76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589254641642:android:8245274b19c08c1c1c9493",
+        "android_client_info": {
+          "package_name": "com.empti.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589254641642-huv2r8nhbg60bmiu88c3t42u23n7l1dr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.empti.app",
+            "certificate_hash": "c54353bc45eaf5957e313bf2ec9989c73ec329a8"
+          }
+        },
+        {
+          "client_id": "589254641642-4vuemu9jumdcucd6nurc51gdcbjod0or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJTAGxPzIPTmbdzUXpQV0tBTaD2Kd212Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589254641642-4vuemu9jumdcucd6nurc51gdcbjod0or.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:gravity="center_horizontal"
+            android:text="New password"
+            android:textColor="@color/colorPasswordTitle"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:gravity="center_horizontal"
+            android:text="@string/new_password_type"
+            android:textColor="@color/colorSignupText"
+            android:textSize="14sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:id="@+id/etNewPasswordEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:cursorVisible="true"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:hint="New password"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:id="@+id/etNewPasswordd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:cursorVisible="true"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:hint="Confirm password"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btSetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rectangal"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            android:text="Set new password"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:translationZ="3dp">
+            <!-- <TextView
+                 android:id="@+id/tvSetPassword"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Set new password"
+                 android:textColor="@color/colorWhite"
+                 android:textAlignment="center"
+                 android:padding="5dp"/>-->
+        </Button>
+    </LinearLayout>
+</LinearLayout>

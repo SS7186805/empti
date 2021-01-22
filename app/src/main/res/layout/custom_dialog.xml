@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Password Reset!"
+        android:fontFamily="@font/nunitosans_semibold"
+        android:textColor="@color/colorPasswordTitle" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Your password has been updated.Please try again with new password."
+        android:textColor="@color/colorSignupText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#45C4C4C4" />
+
+    <Button
+        android:id="@+id/okayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:background="@color/appColor"
+        android:text="Okay"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

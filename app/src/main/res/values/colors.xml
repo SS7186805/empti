@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#319839</color>
+    <color name="colorPrimaryDark">#319839</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorRectangleBackground">#319839</color>
+    <color name="colorSignupText">#FF414141</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorSkipText">#FF888888</color>
+    <color name="colorToolbarTitle">#FF888888</color>
+    <color name="colorPasswordTitle">#FF242424</color>
+    <color name="colorPagerTitle">#FF2E384D</color>
+    <color name="colorGenderVeiw">#FFEDEDED</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="appColor">#319839</color>
+    <color name="screen_color">#efeff4</color>
+    <color name="dark_grey_color">#757575</color>
+
+</resources>

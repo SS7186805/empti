@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/common_toolbar" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothicaone"
+            android:paddingStart="20dp"
+            android:paddingTop="25dp"
+            android:text="@string/your_rank"
+            android:textColor="#787878"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rounded_corners_bg"
+            android:paddingEnd="15dp"
+            tools:ignore="RtlSymmetry">
+
+            <RelativeLayout
+                android:id="@+id/pictureLayout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp">
+
+                <com.github.siyamed.shapeimageview.RoundedImageView
+                    android:id="@+id/myPic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/test"
+                    app:siBorderColor="@android:color/darker_gray"
+                    app:siRadius="21dp"
+                    app:siSquare="true"
+                    tools:ignore="UnusedAttribute" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/myBadgePic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/myPic"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/myName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/pictureLayout"
+                android:fontFamily="@font/gothicaone"
+                android:paddingStart="15dp"
+                android:text="De'marro"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/basket"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/basketbg"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_basketnew" />
+
+                <TextView
+                    android:id="@+id/pickups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@id/basket"
+                    android:fontFamily="@font/gothicaone"
+                    android:paddingStart="10dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothicaone"
+            android:paddingStart="20dp"
+            android:paddingTop="30dp"
+            android:text="All Users"
+            android:textColor="#787878"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/leaderboardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+</RelativeLayout>

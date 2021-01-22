@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/imgContainer"
+        android:layout_width="97dp"
+        android:layout_height="97dp">
+
+        <ImageView
+            android:id="@+id/oneScan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_firstscan" />
+
+        <ImageView
+            android:id="@+id/fade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/circlehigh"
+            android:visibility="gone"
+            android:alpha="0.6" />
+
+        <ImageView
+            android:padding="20dp"
+            android:id="@+id/lock"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/locked" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/scanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/gothicaone"
+        android:text="1st SCAN"
+        android:textColor="#4F4F4F"
+        android:textSize="13sp" />
+</LinearLayout>

@@ -1,1 +1,3 @@
-# empti-android
+# Takai Android
+
+Takai-App

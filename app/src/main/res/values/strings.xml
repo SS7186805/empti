@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Empti</string>
+    <string name="welcome_to_takai">Welcome to Empti</string>
+    <string name="first_intro_description">The easy way to reuse. </string>
+    <string name="create_a_profile">Create a profile</string>
+    <string name="welcome_two_descrip">Just signup and you are ready to go. </string>
+    <string name="link_to_your_account">Link to your account</string>
+    <string name="welcome_third_descrip">Your deposit is returned quickly. </string>
+    <string name="ready_to_use">Ready to use</string>
+    <string name="welcom_fourth_descrip">You are ready to go.</string>
+    <string name="signup_descrip"> Welcome to Empti an easy way to reuse.</string>
+    <string name="login_descrip"> Welcome back </string>
+    <string name="forgot_the_password">Forgot password?</string>
+    <string name="login_error">Your e-mail address or password is wrong.</string>
+    <string name="recover_pssword">Please enter your email to recover\n your password.</string>
+    <string name="new_password_type">Type your new password here</string>
+    <string name="signup_login">Already have an account? <font color="#FF319839">Log in</font></string>
+    <string name="basic_info_desc">Please add your details to continue.</string>
+    <string name="basic_info">By signing up, you agree to Empti</string>
+    <string name="basic_info_term">Terms and Conditions.</string>
+    <string name="facebook_app_id">768994870223234</string>
+    <string name="fb_login_protocol_scheme">fb768994870223234</string>
+    <string name="pesonal_info_descrip">We need to know a little\n  more about you...</string>
+    <string name="complete_profile">Thank you for completing your profile.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="take_photo_txt">📷Take Photo</string>
+    <string name="choose_image_txt">🖼️Choose Image</string>
+    <string name="total_returned">Total Returned</string>
+    <string name="containers_to_next_badge"> containers to next badge</string>
+    <string name="scans">Scans</string>
+    <string name="returns">Returns</string>
+    <string name="streaks">Streaks</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="your_rank">Your Rank</string>
+    <string name="top_10">Top 10</string>
+    <string name="view_payment_receipt">View Payment Receipt</string>
+    <string name="close">CLOSE</string>
+    <string name="congratulation">CONGRATULATION!</string>
+    <string name="something_went_wrong">Something went wrong!!</string>
+    <string name="error">Error</string>
+    <string name="password_does_not_match">password does not match</string>
+    <string name="success">Success</string>
+</resources>
